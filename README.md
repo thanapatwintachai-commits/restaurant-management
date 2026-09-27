@@ -35,3 +35,17 @@ python main.py
 - รับออเดอร์
 - เช็กบิล ส่วนลด ภาษี และค่าบริการ
 - รายงานยอดขายและเมนูขายดี
+
+## Web / Vercel
+The project includes a Flask web interface in `app.py`, `templates/`, `requirements.txt`, and `vercel.json`.
+
+Demo accounts: `admin/1234`, `staff/1234`, `customer/1234`.
+
+Roles:
+- Admin: dashboard, menu CRUD, orders, kitchen, billing, reports, activity log.
+- Staff: orders, kitchen, billing, reports, menu status.
+- Customer: dashboard, menu, tables, orders, create order.
+
+Web orders include server-side search, status filter, sorting, and pagination.
+
+For Vercel, `restaurant_data.json` is suitable for local/classroom demonstration. Serverless runtime storage should not be treated as permanent database storage; use an external database/storage if persistent web edits are required.
